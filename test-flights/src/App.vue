@@ -12,6 +12,7 @@
               <router-link class="nav-link" to="/"><i class="icono fab fa-avianex"></i>Vuelos</router-link>
               <router-link class="nav-link" to="/passenger"><i class="icono fas fa-user"></i> Pasajeros</router-link>
               <router-link class="nav-link" to="/about"><i class="icono fas fa-location-arrow"></i> Reservas de vuelos</router-link>
+              <router-link class="nav-link" to="/seat"><i class="icono fas fa-chair"></i> Asientos</router-link>
               <router-link class="nav-link" to="/bookingpassenger"><i class="icono fas fa-receipt"></i> Reservas de pasajeros</router-link>
             </div>
         </div>
