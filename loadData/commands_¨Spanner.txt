@@ -1,0 +1,14 @@
+//Crear instancia
+gcloud spanner instances create project-instance --config=regional-us-east1 ^ --description="Project DB" --nodes=3
+
+//Crear base de datos
+node schema.js createDatabase project-instance project-db ID_PROYECT
+
+//Cargar datos a la base de datos
+node crud.js insert project-instance project-db ID_PROYECT
+
+//ELiminar base de datos de la instancia
+gcloud spanner databases delete project-db --instance=project-instance
+
+//Eiminar instancia spanner
+gcloud spanner instances delete project-instance
